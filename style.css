@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.backgroundImg {
+    background-image: url(images/bg-main-desktop.png);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.cardFront {
+    background-image: url(images/bg-card-front.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cardFront img {
+    max-width: 50px;
+    width: 100%;
+}
+
+.cardFront #cardNumber {
+    padding: 0 1rem;
+    display: flex;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.cardFront a {
+    color: white;
+    text-decoration: none;
+}
+
+.cardFront .card_name_date {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.cardBack {
+    background-image: url(images/bg-card-back.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cardBack a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    left: 80%;
+    font-size: 1.2rem;
+}
+
+
+.backgroundImg img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+form {
+    display: grid;
+    gap: 1.1rem;
+    width: 40%;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+.cardInput {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.cardInput input {
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 5px;
+    padding: 1rem 1rem;
+}
+
+form button {
+    padding: 1rem 0;
+    background-color: #21092f;
+    color: white;
+    border-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #491752;
+}

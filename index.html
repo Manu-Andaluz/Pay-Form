@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="backgroundImg">
+
+      <div class="cardFront">
+        <img src="images/card-logo.svg" alt="">
+        <a href="" id="cardNumber">0000 0000 0000 0000</a>
+        <div class="card_name_date">
+          <a href="" id="cardName">Jane Appleseed</a>
+          <a href="" id="cardDate">00/00</a>
+        </div>
+      </div>
+
+      <div class="cardBack">
+        <a href="" id="cardCvc">000</a>
+      </div>
+
+    </div>
+
+    <form action="" id="form">
+      <div class="cardInput">
+        <label for="Name">Cardholder Name</label>
+        <input type="text" placeholder="e.g. Jane Appleseed" id="Name">
+      </div>
+      <div class="cardInput">
+        <label for="numberId">Card Number</label>
+        <input type="number" id="numberId" placeholder=" e.g. 1234 5678 9123 0000" value="000">
+      </div>
+      <div class="cardInput">
+        <label for="Date">Exp. Date (MM/YY)</label>
+        <input type="date" id="Date">
+      </div>
+      <div class="cardInput">
+        <label for="CVC">CVC</label>
+        <input type="number" placeholder="e.g. 123" id="Cvc">
+      </div>
+
+      <button type="submit">Confirm</button>
+    </form>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
