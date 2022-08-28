@@ -17,13 +17,9 @@ const cardName = document.getElementById('cardName')
 const cardDate = document.getElementById('cardDate')
 const cardCvc = document.getElementById('cardCvc')
 
-cardNumber.innerText = '0000 0000 0000 0000'
-cardName.innerText = 'Jane Apllesed'
-cardDate.innerHTML = '00/00'
-cardCvc.innerText = '000'
 
 inputName.addEventListener('input', () => {
-    cardName.innerText = inputName.value
+    cardName.innerText = inputName.value.toUpperCase()
 })
 
 inputNumber.addEventListener('input', () => {
