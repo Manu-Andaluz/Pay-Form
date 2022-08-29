@@ -145,8 +145,16 @@ form button:hover {
         width: 100%;
     }
 
+    .cardFront a {
+        font-size: .9rem;
+    }
+
     .cardBack {
         width: 100%;
+    }
+
+    form label {
+        font-size: 1rem;
     }
 }
 
