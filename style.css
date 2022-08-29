@@ -96,10 +96,10 @@ form {
 
 .cardInput {
     display: grid;
-    gap: 0.5rem;
 }
 
-.cardInput input {
+.cardInput input,
+select {
     border: 1px solid rgb(156, 156, 156);
     border-radius: 5px;
     padding: 1rem 1rem;
@@ -113,6 +113,10 @@ form {
     align-items: center;
     gap: 2rem;
     width: 100%;
+}
+
+.containerlastInfo .cardInput {
+    gap: 1.3rem;
 }
 
 .cardMY {
