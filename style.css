@@ -163,4 +163,8 @@ form button:hover {
     form {
         width: 80%;
     }
+
+    form button {
+        padding: 1rem 0;
+    }
 }
