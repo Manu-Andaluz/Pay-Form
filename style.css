@@ -118,3 +118,32 @@ form button {
 form button:hover {
     background-color: #491752;
 }
+
+@media (max-width: 550px) {
+    .cardFront {
+        width: 320px;
+    }
+
+    .cardBack {
+        width: 320px;
+    }
+}
+
+
+@media (max-width:1100px) {
+    .container {
+        display: grid;
+    }
+
+    .backgroundImg {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+
+    form {
+        width: 80%;
+    }
+}
