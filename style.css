@@ -105,6 +105,24 @@ form {
     padding: 1rem 1rem;
 }
 
+.containerlastInfo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(100px,
+                1fr));
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.cardMY {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(50px, 1fr));
+    align-items: center;
+    gap: 5px;
+}
+
 form button {
     padding: 1rem 0;
     background-color: #21092f;

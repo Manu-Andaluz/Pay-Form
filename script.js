@@ -8,7 +8,8 @@ const form = document.getElementById('form')
 //Inputs
 const inputName = document.getElementById('Name')
 const inputNumber = document.getElementById('numberId')
-const inputDate = document.getElementById('Date')
+const inputMonth = document.getElementById('Month')
+const inputYear = document.getElementById('Year')
 const inputCvc = document.getElementById('Cvc')
 
 //Card Img
@@ -26,8 +27,13 @@ inputNumber.addEventListener('input', () => {
     cardNumber.innerText = inputNumber.value
 })
 
-inputDate.addEventListener('input', () => {
-    cardDate.innerText = inputDate.value
+inputMonth.addEventListener('input', () => {
+    cardDate.innerText = `${inputMonth.value} / ${inputYear.value}`
+})
+
+
+inputYear.addEventListener('input', () => {
+    cardDate.innerText = `${inputMonth.value} / ${inputYear.value}`
 })
 
 inputCvc.addEventListener('input', () => {

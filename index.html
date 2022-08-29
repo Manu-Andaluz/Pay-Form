@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | Interactive card details form</title>
+  <title>Frontend Mentor Challenge</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style.css">
@@ -43,13 +43,20 @@
         <label for="numberId">Card Number</label>
         <input type="number" id="numberId" placeholder=" e.g. 1234 5678 9123 0000" min="16" max="16" required>
       </div>
-      <div class="cardInput">
-        <label for="Date">Exp. Date (MM/YY)</label>
-        <input type="date" id="Date" required>
-      </div>
-      <div class="cardInput">
-        <label for="CVC">CVC</label>
-        <input type="number" placeholder="e.g. 123" id="Cvc" min="3" max="3" required>
+      <div class="containerlastInfo">
+
+        <div class="cardInput">
+          <label for="Date">Exp. Date</label>
+          <div class="cardMY">
+            <input type="number" id="Month" placeholder="MM" required>
+            <input type="number" id="Year" placeholder="YY" required>
+          </div>
+        </div>
+        <div class="cardInput">
+          <label for="CVC">CVC</label>
+          <input type="number" placeholder="e.g. 123" id="Cvc" min="3" max="3" required>
+        </div>
+
       </div>
 
       <button type="submit">Confirm</button>
