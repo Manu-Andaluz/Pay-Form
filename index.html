@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor Challenge</title>
+  <title>Pay Form Challenge</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style.css">
@@ -37,11 +37,11 @@
     <form action="" id="form">
       <div class="cardInput">
         <label for="Name">Cardholder Name</label>
-        <input type="text" placeholder="e.g. Jane Appleseed" id="Name" required>
+        <input type="text" maxlength="20" placeholder="e.g. Jane Appleseed" id="Name" required>
       </div>
       <div class="cardInput">
         <label for="numberId">Card Number</label>
-        <input type="text" id="numberId" placeholder=" e.g. 1234 5678 9123 0000" required>
+        <input type="text" maxlength="16" id="numberId" placeholder=" e.g. 1234 5678 9123 0000" required>
       </div>
       <div class="containerlastInfo">
 
@@ -77,7 +77,7 @@
         </div>
         <div class="cardInput">
           <label for="Cvc">CVC</label>
-          <input type="number" placeholder="e.g. 123" id="Cvc" required>
+          <input type="text" maxlength="3" placeholder="e.g. 123" id="Cvc" required>
         </div>
 
       </div>

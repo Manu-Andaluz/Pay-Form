@@ -22,8 +22,9 @@ inputName.addEventListener('input', () => {
     cardName.innerText = inputName.value.toUpperCase()
 })
 
+
 inputNumber.addEventListener('input', () => {
-    cardNumber.innerText = inputNumber.value
+    cardNumber.innerText = inputNumber.value.match(/.{1,4}/gi).join(' ');
 })
 
 inputMonth.addEventListener('input', () => {
@@ -36,5 +37,7 @@ inputYear.addEventListener('input', () => {
 })
 
 inputCvc.addEventListener('input', () => {
-    cardCvc.innerText = inputCvc.value
+    if (Number(inputCvc.value)) {
+        cardCvc.innerText = inputCvc.value
+    }
 })
