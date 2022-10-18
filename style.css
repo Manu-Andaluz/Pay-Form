@@ -134,6 +134,7 @@ form button {
     border-radius: 10px;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    padding: 10px 0;
 }
 
 form button:hover {
